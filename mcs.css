@@ -1,0 +1,47 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+  margin: 10px;
+  background-image: linear-gradient(90deg, #0082ca15, #cd202c15, #77b30015);
+  font-family: arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: left
+}
+
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content:"\25A0";
+  font-size: 1rem;
+  /*color: #0082ca; [> Change the color <]*/
+  color: black; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 2em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
